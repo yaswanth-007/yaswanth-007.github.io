@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <title>Forms</title>
+        <!--<link  href="main.js">-->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <div id="main-table">
+           <form  id="user-form">
+            <table>                
+                <tr> 
+                    <td><label for="name">Name</label></td>
+                    <td><input required type="text" id="name" name="name" ><br></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input required type="email" id="email" name="email" ><br></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" required><br></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" id="dob" name="dob" min="1967-07-09" max="2004-07-09" required><br></td>
+                    <span id="mydate_error" style="display:none;"></span>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="acceptTerms" name="acceptTerms" required></td>
+                    <td><label for="acceptTerms">Accept Terms & Conditions</label><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" ><button type="submit" >Submit</button></td>
+                </tr>
+            </table>
+           </form>
+        </div>
+        <div class="result">
+                <div id="user-entries" ></div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
